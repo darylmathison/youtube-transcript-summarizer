@@ -37,7 +37,6 @@ def summarize(transcript):
             {"role": "user", "content": query},
         ],
         temperature=0.25,
-        max_tokens=250,
     )
     return response.choices[0].message.content
 
